@@ -1,0 +1,32 @@
+.app {
+    background: #f1f1f1;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.cabecalho {
+    grid-area: header;
+    display:flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.conteudo {
+    grid-area: main;
+    padding: 1rem 2rem;
+
+}
+
+.rodape {
+    grid-area: footer;
+    text-align: center;
+    background:#fdfdfd;
+    font-size: .8rem;
+    padding:1rem;
+}
